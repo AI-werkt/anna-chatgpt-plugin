@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "anna-notulist",
+  "version": "1.0.0",
+  "description": "Praat met je ANNA!-vergaderarchief: vind opnames, lees transcripten en notulen, haal actiepunten op en maak overkoepelende samenvattingen. Alles binnen je eigen organisatie.",
+  "author": {
+    "name": "AI werkt!",
+    "email": "carel.kuijper@ai-werkt.nl",
+    "url": "https://ai-werkt.nl"
+  },
+  "homepage": "https://meeting.aifundament.nl",
+  "repository": "https://github.com/AI-werkt/anna-chatgpt-plugin",
+  "license": "UNLICENSED",
+  "keywords": ["anna", "notulen", "meetings", "transcriptie", "actiepunten", "ai-werkt"]
+}

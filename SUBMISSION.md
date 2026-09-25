@@ -14,7 +14,7 @@ Alles wat nodig is om de plugin in te dienen via het OpenAI **plugin-submission*
 | **Icoon** | `assets/icon.png` (512×512) |
 | **Homepage** | https://meeting.aifundament.nl |
 | **Support-contact** | carel.kuijper@ai-werkt.nl |
-| **Privacybeleid** | https://meeting.aifundament.nl/privacy  _(URL bevestigen/aanmaken vóór indienen)_ |
+| **Privacybeleid** | https://meeting.aifundament.nl/privacy  (live) ✓ |
 | **Beschikbaarheid (landen)** | Nederland (uitbreiden naar wens) |
 
 ## MCP-technisch
@@ -59,7 +59,7 @@ actiepunten), zodat de tools echte data teruggeven. Lever e-mail + wachtwoord bi
 3. **"Boek een vlucht naar Barcelona."** → buiten scope; het model gebruikt de ANNA!-tools niet en helpt niet met deze onbedoelde vraag.
 
 ## Vóór indienen — checklist
-- [ ] Privacybeleid-URL live en correct.
+- [x] Privacybeleid-URL live: https://meeting.aifundament.nl/privacy
 - [ ] Testaccount met voorbeeld-meetings aangemaakt; inloggegevens ingevuld.
 - [ ] Domein `aifundament.nl` geverifieerd in het OpenAI-portaal.
 - [ ] Identiteits-/bedrijfsverificatie in het OpenAI Platform-dashboard afgerond (onder de naam waaronder je publiceert).

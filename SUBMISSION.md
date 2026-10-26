@@ -11,7 +11,7 @@ Alles wat nodig is om de plugin in te dienen via het OpenAI **plugin-submission*
 | **Lange omschrijving** | ANNA! is een bot-vrije AI-notulist. Met deze plugin bevraag je vanuit ChatGPT je eigen ANNA!-vergaderarchief: vind opnames op onderwerp of datum, lees de AI-samenvatting of het volledige transcript, haal actiepunten op (met eigenaar en deadline) en maak overkoepelende samenvattingen over meerdere meetings. Alles blijft binnen je eigen organisatie. |
 | **Categorie** | Productiviteit / Notities & vergaderingen |
 | **Keywords** | notulen, meetings, transcriptie, actiepunten, samenvatting |
-| **Icoon** | `assets/icon.png` (512×512) |
+| **Icoon** | `plugins/anna-notulist/assets/icon.png` (512×512) |
 | **Homepage** | https://meeting.aifundament.nl |
 | **Support-contact** | carel.kuijper@ai-werkt.nl |
 | **Privacybeleid** | https://meeting.aifundament.nl/privacy  (live) ✓ |

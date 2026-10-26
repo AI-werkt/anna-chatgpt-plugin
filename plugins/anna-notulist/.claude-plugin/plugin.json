@@ -1,0 +1,24 @@
+{
+  "name": "anna-notulist",
+  "version": "1.0.0",
+  "description": "Praat met je ANNA!-vergaderarchief: vind opnames, lees transcripten en notulen, haal actiepunten op en maak overkoepelende samenvattingen. Alles binnen je eigen organisatie.",
+  "author": {
+    "name": "AI werkt!",
+    "email": "carel.kuijper@ai-werkt.nl",
+    "url": "https://ai-werkt.nl"
+  },
+  "homepage": "https://meeting.aifundament.nl",
+  "repository": "https://github.com/AI-werkt/anna-chatgpt-plugin",
+  "license": "UNLICENSED",
+  "keywords": ["anna", "notulen", "meetings", "transcriptie", "actiepunten", "ai-werkt"],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ANNA!",
+    "shortDescription": "Praat met je vergaderarchief: notulen, transcripten en actiepunten.",
+    "longDescription": "ANNA! is een bot-vrije AI-notulist. Met deze plugin bevraag je vanuit ChatGPT je eigen ANNA!-vergaderarchief: vind opnames op onderwerp of datum, lees de samenvatting of het volledige transcript, haal actiepunten op (met eigenaar en deadline) en maak overkoepelende samenvattingen over meerdere meetings. De verbinding verloopt via OAuth 2.1 en is per gebruiker op de eigen organisatie gescoped — je ziet uitsluitend de meetings van je eigen organisatie.",
+    "developerName": "AI werkt!",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://meeting.aifundament.nl"
+  }
+}

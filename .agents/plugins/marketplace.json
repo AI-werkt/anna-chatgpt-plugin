@@ -1,0 +1,20 @@
+{
+  "name": "ai-werkt",
+  "interface": {
+    "displayName": "AI werkt!"
+  },
+  "plugins": [
+    {
+      "name": "anna-notulist",
+      "source": {
+        "source": "local",
+        "path": "./plugins/anna-notulist"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

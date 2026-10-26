@@ -10,6 +10,12 @@ daarna per rol op "geïnstalleerd". De plugin wijst naar de live ANNA-MCP-server
 die authenticeert met **OAuth 2.1 (PKCE)** en is **per gebruiker op `org_id`
 gescoped** — iedereen ziet uitsluitend de meetings van de eigen organisatie.
 
+> ⚠️ **Let op — deze plugin-route werkt alleen in de ChatGPT-desktop-app.**
+> ChatGPT markeert elke uit GitHub geïmporteerde plugin met een MCP-server als
+> *"Desktop only"*. Wil je ANNA! óók op **web en mobiel**, gebruik dan de
+> **connector-route**: zie **[CONNECTOR-INSTALL.md](CONNECTOR-INSTALL.md)**
+> (dezelfde MCP-URL, als custom connector workspace-breed gepubliceerd).
+
 ## Inhoud
 ```
 .agents/plugins/marketplace.json        # marketplace-manifest (verwijst naar de plugin)

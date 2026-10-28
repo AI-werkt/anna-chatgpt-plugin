@@ -1,49 +1,51 @@
-# ANNA! in ChatGPT — als connector (web, mobiel én desktop)
+# ANNA! in ChatGPT — als custom MCP-server (web, mobiel én desktop)
 
-Deze route voegt ANNA! toe als **custom connector** (remote MCP-server). Anders dan de
-GitHub-plugin — die alleen in de **ChatGPT-desktop-app** werkt — werkt een connector op
-**web, mobiel en desktop**. Je koppelt de ANNA-MCP-server één keer en publiceert 'm voor
+Deze route voegt ANNA! toe als **custom MCP-server**. ChatGPT maakt daar een **plugin**
+van (vroeger heette dit "connector"; die menu's bestaan niet meer). Anders dan de
+GitHub-plugin — die alleen in de **ChatGPT-desktop-app** werkt — werkt deze route op
+**web, mobiel en desktop**. Je voegt de ANNA-MCP-server één keer toe en publiceert 'm voor
 de hele werkruimte; iedere gebruiker logt daarna met z'n eigen ANNA-account in en ziet
 **uitsluitend de meetings van de eigen organisatie** (OAuth 2.1, org-gescoped).
 
-- **Nodig:** ChatGPT **Business** of Enterprise/Edu, en een **workspace-admin/owner**.
+- **Nodig:** ChatGPT **Business** of Enterprise/Edu, en een **workspace-admin/owner**
+  (op Business mogen alleen admins en owners plugins met MCP's maken: permissie
+  *Create plugins with MCPs*).
 - **MCP-URL:** `https://mcp.aifundament.nl/mcp`
 - **Authenticatie:** OAuth — **Client ID en Secret leeg laten** (de server registreert zich
   automatisch via Dynamic Client Registration).
 
 ---
 
-## A. Eenmalig instellen (admin/owner)
+## A. Eenmalig instellen (admin/owner, in de browser)
 
-**1. Developer mode aanzetten**
-Settings → **Apps & Connectors** → **Advanced settings** → **Enable developer mode**.
-(Hiermee mag je een eigen, nog niet-geverifieerde MCP-connector toevoegen.)
-
-**2. De connector aanmaken**
-Settings → **Connectors** → **Create**:
+**1. De MCP-server toevoegen**
+Ga naar **Plugins** ([chatgpt.com/plugins](https://chatgpt.com/plugins)) → **+** →
+**Add custom MCP server**:
 - **Name:** `ANNA!`
-- **Server URL / MCP URL:** `https://mcp.aifundament.nl/mcp`
+- **Connection → Server URL:** `https://mcp.aifundament.nl/mcp`
 - **Authentication:** **OAuth**
 - **Client ID / Secret:** leeg laten
-- Aanmaken/opslaan.
+- Lees de waarschuwing, kies **I understand and want to continue** en daarna
+  **Create as a plugin**.
 
-**3. Inloggen (OAuth)**
+Een aparte "developer mode" aanzetten is niet meer nodig.
+
+**2. Inloggen (OAuth)**
 Er opent een venster om in te loggen met je **ANNA-account**. Keur de toegang goed
 (scopes `meetings.read` voor lezen en `meetings.generate` voor notulen (her)genereren).
-Na het koppelen is de connector eerst **alleen voor jou** zichtbaar.
+Na het toevoegen is de plugin eerst **alleen voor jou** zichtbaar.
 
-**4. Publiceren naar de werkruimte**
-Settings → **Workspace settings** → **Apps** → tab **Drafts** → zoek **ANNA!** → **Publish**.
+**3. Publiceren naar de werkruimte**
+Workspace settings → **Apps** → tab **Drafts** → zoek **ANNA!** → **Publish**.
 Kies desgewenst voor welke rollen 'ie beschikbaar is. Daarna kunnen collega's 'm zelf
-koppelen.
+installeren.
 
 ---
 
 ## B. Voor elke gebruiker (web / mobiel / desktop)
 
-1. Open een nieuwe chat (web, mobiele app of desktop-app).
-2. Typ **`@`** en kies **ANNA!** (of koppel 'm één keer via Settings → Connectors → **Connect**
-   en log in met je ANNA-account).
+1. Installeer **ANNA!** één keer via **Plugins** en log in met je ANNA-account.
+2. Open een nieuwe chat (web, mobiele app of desktop-app), typ **`@`** en kies **ANNA!**.
 3. Vraag bijvoorbeeld:
    - *"Welke meetings had ik vorige week?"*
    - *"Wat waren de actiepunten uit de vergadering van [datum]?"*
@@ -64,10 +66,11 @@ Je ziet altijd alleen de opnames van je **eigen organisatie**.
 
 ## Problemen oplossen
 
-- **Geen "Connectors"/"Developer mode" in Settings:** het account zit niet op Business/
-  Enterprise/Edu, of developer mode staat uit (zie stap 1). Op Pro zijn alleen lezen/zoeken
-  mogelijk; Free wordt niet ondersteund.
-- **Gepubliceerde connector niet zichtbaar bij collega's:** geef het even tijd / herlaad;
+- **Geen "Connectors" in Settings:** klopt, die heten nu **Plugins**. Volg stap A1 hierboven.
+- **Geen "+ → Add custom MCP server" bij Plugins:** het account is geen admin/owner van de
+  Business-werkruimte, of zit niet op Business/Enterprise/Edu. Laat een beheerder de
+  plugin toevoegen en publiceren; Free wordt niet ondersteund.
+- **Gepubliceerde plugin niet zichtbaar bij collega's:** geef het even tijd / herlaad;
   controleer of 'ie echt is **gepubliceerd** (niet in Drafts) en voor de juiste rol beschikbaar is.
 - **OAuth-venster loopt vast:** opnieuw proberen; de koppeling gebruikt standaard OAuth 2.1
   met PKCE en automatische client-registratie, dus er zijn geen handmatige sleutels nodig.

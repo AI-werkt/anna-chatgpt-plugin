@@ -13,8 +13,8 @@ gescoped** — iedereen ziet uitsluitend de meetings van de eigen organisatie.
 > ⚠️ **Let op — deze plugin-route werkt alleen in de ChatGPT-desktop-app.**
 > ChatGPT markeert elke uit GitHub geïmporteerde plugin met een MCP-server als
 > *"Desktop only"*. Wil je ANNA! óók op **web en mobiel**, gebruik dan de
-> **connector-route**: zie **[CONNECTOR-INSTALL.md](CONNECTOR-INSTALL.md)**
-> (dezelfde MCP-URL, als custom connector workspace-breed gepubliceerd).
+> **custom-MCP-route**: zie **[CONNECTOR-INSTALL.md](CONNECTOR-INSTALL.md)**
+> (dezelfde MCP-URL, via Plugins → + → Add custom MCP server, workspace-breed gepubliceerd).
 
 ## Inhoud
 ```
